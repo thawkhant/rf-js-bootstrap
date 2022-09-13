@@ -1,0 +1,84 @@
+.firstdiv{
+	width: 200px;
+	height: 100px;
+	/*background: hsl(345.25, 65.56%, 64.71%);*/
+	/*background-color: #89ada8;*/
+
+
+	/*background-color: rgb(255, 146, 0);*/
+	background-color: rgba(10,240,19,1);
+	color: #fff;
+	font-size: 20px;
+}
+
+.seconddiv{
+	width: 300px;
+	height: 200px;
+
+	/*background-image: url('../img/logo.png');*/
+	background: url('../img/logo.png');
+	background-repeat: no-repeat;
+	/*background-repeat: repeat-x;*/
+	/*background-repeat: repeat-y;*/
+
+	background-position: center;
+	border: 5px solid green;
+}
+
+#div3{
+     width: 300px;
+     height: 300px;
+     border: 3px solid red;
+     /*  linear-gradient*/
+     /*background: linear-gradient(blue,red,yellow,green,black);*/
+     /*background-image:linear-gradient(blue,red,yellow);*/
+      /*background: linear-gradient(rgba(127,127,79,1.00),rgba(35,241,185,1.00),rgba(35,0,185,0.76));*/
+
+     /* background: linear-gradient(
+      	90deg,
+      	red,
+      	green,
+      	yellow);*/
+        
+
+        /*radial-gradient*/
+      	/*background: radial-gradient(red,blue,green);*/
+      /*	background: radial-gradient(rgba(127,127,79,1.00),rgba(35,241,185,1.00),rgba(35,0,185,0.76));*/
+
+      /*background: linear-gradient(
+      red 50%,
+      green 40%,
+      );*/
+
+      background: linear-gradient(
+      red 30%,
+      yellow 0 80%,
+      blue 10%
+      );
+
+}
+
+.div4{
+	width: 200px;
+	height: 300px;
+
+	background: linear-gradient(
+		10deg,
+    rgba(127,127,79,0.8),
+    rgba(35,241,185,0.8)),
+	 url('../img/logo.png');
+	 background-repeat: no-repeat;
+	
+
+}
+
+
+
+
+
+
+/*color
+1.man
+2.mix
+3.rga
+4.rgba*/

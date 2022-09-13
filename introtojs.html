@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Intro to JS</title>
+	<style type="text/css">
+/*
+		body{
+			height: 100vh;
+
+			display: flex;
+			justify-content: center;
+		    align-items: center;
+
+		}
+		*/
+		/*ul{
+			list-style-type: none;
+			background: violet;
+			padding: 20px;
+		}
+*/
+
+
+	</style>
+</head>
+<body>
+
+	<!-- <ul>
+		<li>name : Ko Ko</li>
+		<li>hobby : Playing Games</li>
+		<li>job : Web Developer</li>
+		<li>age : 22</li>
+		<li>Adress : Yagon</li>
+	</ul> -->
+
+
+	<img src="./img/love.jpg" alt="love" width="200px" id="love" />
+     <br/><br/>
+	<button onclick="document.getElementById('love').src='./img/like.jpg'">Like Reaction</button>
+	<button onclick="document.getElementById('love').src='./img/haha.png'">Ha Ha Reaction</button>
+	<button onclick="document.getElementById('love').src='./img/sad.webp'">Sad Reaction</button>
+	<button onclick="document.getElementById('love').src='./img/wow.png'">Woww Reaction</button>
+
+	<hr/>
+
+	<h1 id="xxx">Welcome to Myanmar</h1>
+
+
+
+	<script type="text/javascript">
+		
+		console.log("maung maung");
+		console.log("aung aung");
+		console.log('ko ko');
+
+		console.log(5000 + 1);
+		console.log("5000" + 1);
+
+		console.log("aung aung" , "ko ko" , "kyaw kyaw");
+		console.log(100,200,300);
+		console.log("kyaw kayw",100,"ko ko",200);
+
+		console.log(10+10);
+		console.log(10+"40");
+		console.log("20"+'30');
+		console.log("aung" + 20);
+
+		console.log(true);   // true value is 1
+		console.log(false);   // flase value is 0
+		console.log(true+10);
+		console.log(false+10);
+		console.log(true + "aung aung");
+		console.log(false + "aung aung");
+
+
+		// window.alert("Welcome to our Site");
+		// window.alert("Save Myanmar");
+		// window.alert("Hollo Molly");
+
+		// alert("Run Free");
+
+
+		// Variable (const/var/let)
+
+		const ako = "Katashi";
+		console.log(ako);
+		// window.alert(ako);
+		console.log("ako");
+		console.log("My name is ako");
+		console.log("My name is " + ako);
+		console.log('My name is ' + ako);
+		console.log(`My name is ${ako}`);  
+
+
+		let first = 1000;
+		const second = 2000;
+		console.log(first+second);
+		console.log("first+second");
+		console.log("first"+"second");
+
+		console.log(`${first+second}`);
+
+		console.log(`${first} + ${second}`);
+
+
+		var number1 = '30';
+		const number2 = 20;
+		console.log(number1+number2);
+
+		var number1 = 50;
+		console.log(number1);
+
+		const firname = "Maung Maung";
+		const secname = "Ko Ko";
+
+		console.log(firname + " and " + secname + " are my friends");
+		console.log(`${firname} and ${secname} are my friends`);
+
+
+		let greeting = "Hello";
+		var cityi = "Yangon";
+		const cityii = "Mandalay";
+
+		console.log(greeting + " from "+cityi + " and "+cityii);
+		console.log(`${greeting} from ${cityi} and ${cityii}`);
+
+		const a = "I\"m Katashi";
+		const b = 'I love\'s my mom \@';
+
+		console.log(b);
+
+		// document.write("I am Katashi");
+		// document.write("<br/> <br/> <hr/>")
+		// document.write("<h1>Welcome to Run Free</h1>")
+		// document.write('Welocme to Run Free');
+
+
+		var name = "Khaing Lin";
+		let hobby = "Coding";
+		const job = "Student";
+		const age = "16";
+		const address = "Mandalay";
+
+		let mylife;
+
+
+		// mylife = `<ul>
+		// <li>Name : ${name}</li>
+		// <li>Hobby : ${hobby}</li>
+		// <li>Job : ${job}</li>
+		// <li>Age : ${age}</li>
+		// <li>Address : ${address}</li>
+		// </ul>`;
+
+		// document.write(mylife);
+
+		// document.getElementById("xxx").textContent = "Welcome to Mandalay";
+		//document.getElementById("xxx").innerText = "Welcome to Thailand";
+		 document.getElementById("xxx").innerHTML = "Welcome to China";
+
+
+
+	</script>
+</body>
+</html>
+
+

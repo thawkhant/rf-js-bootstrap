@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Storages</title>
+</head>
+<body>
+	
+	<script type="text/javascript">
+		
+		localStorage.setItem("name","Kyaw Gyi");
+		localStorage.setItem("age",27);
+		localStorage.setItem("address","Yangon");
+
+		var name = localStorage.getItem("name");
+		console.log(name);
+	    var age = localStorage.getItem("age");
+		console.log(age);
+		var adddress = localStorage.getItem("address");
+		console.log(adddress);
+
+		localStorage.setItem("name","Kyaw Lay");
+		localStorage.setItem("age",16);
+		localStorage.setItem("address","Mandalay");
+
+
+		localStorage.removeItem("name");
+		localStorage.removeItem("age");
+		localStorage.removeItem("address");
+
+
+
+	// -----------------------------------------------------
+
+		// Session Storage
+
+
+	</script>
+</body>
+</html>

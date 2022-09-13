@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Combinator</title>
+	<link href="./css/combinator.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	
+	<h4>Tag to Tag</h4>
+
+	<div>
+		<span>I am span tag inside of div</span>
+	</div>
+
+	<div>I am div tage outside of div</div>
+
+	<span>I am span tag outside of div</span>
+
+	<hr/>
+
+	<h4>Tag to Tags</h4>
+
+	<div>
+		<span>
+			<p>I am p tag inside of div and span</p>
+		</span>
+	</div>
+
+	<div>
+		<p>i am p tag inside of div</p>
+	</div>
+
+	<span>
+		<p>I am p tag inside of span tag</p>
+	</span>
+
+	<hr/>
+
+	<h4>Tag to Class</h4>
+
+	<div>
+		<p class="address">i am p tag inside of div</p>
+
+		<span>
+			<b>i am b tag inside of div > span</b>
+		</span>
+	</div>
+
+	<p>i am p tag ousite of div</p>
+
+	<span>
+		<b>i am b tag outside of div</b>
+	</span>
+
+	<hr/>
+
+	<h4>Muti Tags to Class</h4>
+
+	<div>
+		<span>
+			<small class="name">i am small tag inside of div > span >small(name)</small>
+		</span>
+		<p>i am p tag inside of div </p>
+		<p>i am also p tag inside of div</p>
+	</div>
+
+	<hr/>
+
+	<h4>Multi Tags to Same Class</h4>
+	<div>
+		<span>
+			<small class="name">i am small tag inside of div > span</small>
+		</span>
+		<p class="name">i am p tag inside of div</p>
+		<p>i am p tag inside of div</p>
+	</div>
+
+	<hr/>
+
+	<h4>Multi Class to Class</h4>
+
+	<div class="bank">
+		<b>i am b tag inside of div(bank)</b>
+		<br/>
+		<span class="money">
+			<b class="currency">i am b tag inside of div(bank) > span(money) > b(currency)</b>
+		</span>
+	</div>
+
+	<hr/>
+
+	<h4>Tag to Muti Class</h4>
+	<div>
+		<p>i am p tag inside of div</p>
+		<span class="name">
+			<b class="age">i am b tag inside of div > span</b>
+		</span>
+	</div>
+
+	<hr/>
+
+	<h4>Class to Tag</h4>
+
+	<div class="container">
+		<p>i am p tag inside of div(container)</p>
+		<b>i am b tag inside of div(container)</b>
+	</div>
+
+	<hr/>
+
+	<h4>Class to Multi Tags</h4>
+	<div class="container">
+		<p>i am p tag insdie of div</p>
+		<b>
+			<span>i am span tag inside of div</span>
+		</b>
+	</div>
+
+	<hr/>
+	<h4>Same Class</h4>
+
+	<div>
+		<ul>
+			<li class="mobile ios">Apple</li>
+			<li class="mobile smg">Samsung</li>
+			<li class="mobile op">Oppo</li>
+		</ul>
+	</div>
+    
+    <hr/>
+
+    <h4>General Sibling Selector</h4>
+
+    <div class="div1">
+    	<b>i am b tag inside of div1</b>
+    	<p>i am p tag inside of div1</p>
+    	<i>i am i tag inside of div1</i>
+
+    	<div class="div2">
+        <b>i am b tag inside of div1 > div2</b>
+    	<p>i am p tag inside of div1 > 2</p>
+    	<i>i am i tag inside of div1 > 2</i>
+    	</div>
+
+        <b>i am b tag inside of div1</b>
+    	<p class="spec">i am p tag inside of div1</p>
+    	<i>i am i tag inside of div1</i>
+    </div>
+
+    <div class="div3">
+    	<b>i am b tag inside of div3</b>
+    	<p>i am p tag inside of div3</p>
+    	<i>i am i tag inside of div3</i>
+    </div>
+
+    	<b>i am b tag outside of div3</b>
+    	<p>i am p tag outside of div3</p>
+    	<i>i am i tag outide of div3</i>
+
+    	<br/>
+        
+        <b>i am b tag outside of div3</b>
+    	<p class="end">i am p tag outside of div3</p>
+    	<i>i am i tag outide of div3</i>
+
+
+
+</body>
+</html>

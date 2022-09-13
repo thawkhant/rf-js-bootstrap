@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Function</title>
+	<style type="text/css">
+
+		*{
+			box-sizing: border-box;
+		}
+
+		body{
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.container{
+			width: 300px;
+			background: #f4f4f4;
+			padding: 10px;
+			box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+		}
+
+		.container h2{
+			text-align: center;
+		}
+
+		.container label{
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		.container .form-control{
+			width: 100%;
+			display: block;
+			padding: 5px;
+			margin-bottom: 20px;
+		}
+
+		.btn{
+			width: 100%;
+			font-size: 16px;
+			background:darkblue;
+			color: #fff;
+			border: none;
+			padding: 5px;
+		}
+		
+
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<h2>Your Name = <span id="replacname">Test</span></h2>
+
+		<label for="firstname">First Name</label>
+		<input type="text" name="firstname" id="firstname" class="form-control" autocomplete="off" autofocus/>
+
+		<label for="lastname">Last Name</label>
+		<input type="text" name="lastname" id="lastname" class="form-control" autocomplete="off" autofocus />
+
+		<button type="button" onclick="getdata()" class="btn">Get Name</button>
+	</div>
+	
+	<script type="text/javascript">
+		
+		// function greeting(){
+		// 	console.log("Hello Mello")
+		// }
+
+		// greeting();
+		// greeting();
+		// greeting();
+
+		// function hello(){
+		// 	console.log("Hi i am hello")
+		// }
+		// hello();
+
+
+		// function abc(){
+		// 	document.write("Hello Hello")
+		// }
+
+		// abc();
+
+		// function one(){
+		// 	document.write("Helo I am function 1");			
+		// }
+
+		// // one();
+
+		// function two(){
+		// 	one();
+		// 	console.log("I am function 2");
+		// 	three();
+		// }
+		
+		// function three(){
+		// 	console.log("I am function 3")
+		// }
+
+		// one();
+
+
+		// function four(){
+		// 	console.log("I am function 4")
+		// }
+
+		// function five(){
+		// 	console.log("I am function 5")
+		// }
+
+		// function six(){
+		// 	// four();
+		// 	// five();
+
+		// 	const sub1 = four();
+		// 	const sub2 = five();
+		// 	console.log(sub1);
+		// 	console.log(sub2);
+
+		// 	const total = sub1+sub2;   //Result NaN(Not a number)
+		// 	console.log(total);
+		// }
+
+		//  six();
+
+
+		 // function seven(){
+		 // 	return "Thaw";
+		 // }
+
+		 // console.log(seven);
+
+		 // function eight(){
+		 // 	return "Gyi";
+		 // }
+
+		 // console.log(eight)
+
+		 // function nine(){
+		 // 	const num1 = seven();
+		 // 	const num2 = eight();
+
+		 // 	const total = num1 + num2;
+		 // 	//console.log(total);
+
+
+		 // 	 return total;
+		 // }
+
+		 //  //nine();
+		 // document.write(nine());
+
+   //       // Single parameter Function
+		 // function fun1(name){
+		 // 	console.log(`Hello ${name}`)
+		 // }
+
+		 // fun1("Maung Maung");
+		 // fun1("Tun Tun");
+		 // fun1("Ko Ko");
+		 // fun1();
+
+		 // function fun2(name = "Katashi"){
+		 // 	console.log(`I am ${name}`);
+		 // };
+
+		 // fun2();
+		 // fun2("Kyaw Gyi");
+
+
+		 // function multi1(a,b="Ko Ko",c){
+		 // 	console.log(`Hello I am ${a}`);
+		 // 	console.log(`Hello I am person ${b}`);
+		 // 	console.log(`I am ${c}`)
+		 // };
+
+		 // multi1("Katashi","Ko Gyi");
+
+          // Constructor Fucntion or String function
+		 const one = new Function("x","y","z","return x+y+z");
+		 console.log(one(10,20,30));
+		 console.log(one(10,20));
+
+		 console.log(one('10','20','30'));
+		 console.log(one("aung aung","kyaw kyaw","ko ko"));
+
+         // annomous function or nameless function
+		 let anno = function(name,color){
+		 	console.log(`My name is ${name} and My fav color is ${color}`);
+		 };
+
+		    anno("Ko Ko","Red");
+
+           // Self Invoking Function
+		    (function (name){
+		    	console.log(`My name is ${name}`)
+		    })("Ko Ko");
+
+
+		    (function (color){
+		    	console.log("My fav color is "+ color)
+		    })("Yellow");
+
+
+		    function getdata(){
+		    	// console.log("Hello Mello");
+
+		    	var getfirname = document.getElementById("firstname").value;
+		    	var lastname = document.getElementById("lastname").value;
+		    	// console.log(getfirname,lastname);
+
+		    	var replace = document.getElementById("replacname");
+
+		    	// replace.textContent = `${getfirname} ${lastname}`;
+
+		    	 document.getElementById("replacname").innerText = `${getfirname} ${lastname}`; 
+
+		    	document.getElementById("firstname").value = "";
+		    	document.getElementById("lastname").value = "";
+
+		    	document.getElementById("firstname").focus();
+
+		    	
+		    }
+
+
+		    // function getdata(){
+		    // 	var firstname = document.getElementById('firstname');
+		    // 	var lastname = document.getElementById("lastname");
+		       
+		    //    const replace = document.getElementById("replacname");
+
+		    //    replace.innerText = `${firstname.value} ${lastname.value}`;
+
+		    //    firstname.value = "";
+		    //    lastname.value = "";
+
+		    //    firstname.focus();
+		    // }
+
+
+
+		    // let ano = function(){
+		    // 	return "I love Yagnon";
+		    // }
+
+		    // console.log(ano)
+
+		    // let ano = ()=>{
+		    // 	return"Hello";
+		    // }
+
+		    // console.log(ano())
+
+
+		    // let ano = ()=>"Hello Yangon";
+		    // console.log(ano())
+
+
+		    // let ano = ()=>("Hello Mandalay");
+		    // console.log(ano());
+
+
+		    // let ano = ()=>({name : "Kyaw Gyi"});
+		    // console.log(ano());
+
+
+		    // var reg = function(num1){
+		    // 	return num1+10;
+		    // }
+
+		    // console.log(reg(30));
+
+
+		    // let regg = function(num1,num2){
+		    // 	return num1+num2;
+		    // }
+		    // console.log(regg(10,10));
+
+
+		    // let arr = (num1)=>{
+		    // 	return num1+10;
+		    // }
+		    // console.log(arr(10));
+
+		    // let arr = num1=>{
+		    // 	return num1+10;
+		    // }
+
+		    // console.log(arr(10));
+
+
+		    // let arr = num1 => num1+10;
+		    // console.log(arr(10));
+
+		    let arrmulti = (num1,num2)=>{
+		    	return num1+num2;
+		    }
+
+		    console.log(arrmulti(10,10));
+
+
+
+
+
+
+
+
+	</script>
+	
+
+
+</body>
+</html>

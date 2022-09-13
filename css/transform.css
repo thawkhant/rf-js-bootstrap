@@ -1,0 +1,112 @@
+:root{
+	--rd: red;
+	--bl: blue;
+	--yw: yellow;
+}
+
+.div1{
+	width: 100px;
+	height: 80px;
+	background: var(--rd);
+
+	transform: rotate(45deg);
+}
+
+.div2{
+	width: 200px;
+	height: 80px;
+	background: var(--bl);
+
+	transform: rotate(-45deg);
+}
+
+.div3{
+	width: 200px;
+	height: 80px;
+	background: var(--yw);
+
+	transform: rotateX(45deg);
+}
+
+.div4{
+	width: 200px;
+	height: 80px;
+	background: var(--yw);
+
+	transform: rotateY(45deg);
+}
+
+.div5{
+	width: 200px;
+	height: 80px;
+	background: var(--rd);
+    
+    /*Default = 1*/
+	transform: scale(0.5);
+}
+
+.div6{
+	width: 200px;
+	height: 80px;
+	background: var(--yw);
+
+	/*transform: skew(50deg);*/
+	transform: skew(-50deg);
+}
+
+.div7{
+	width: 200px;
+	height: 80px;
+	background: var(--bl);
+    
+    /*transform: translate(50%);*/
+    /*transform: translate(-50%);*/
+    /*transform: translate(100%);*/
+    /*  transform: translate(-100%);*/
+
+     /*transform: translate(500px);*/
+     /*transform: translate(-500px);*/
+     /*transform: translateX(500px);*/
+     /*transform: translateX(-100px);*/
+
+      /*transform: translateY(500px);*/
+      /*transform: translateY(-500px);*/
+
+}
+
+.country{
+	font-size: 16px;
+    
+    /*-webkit-apperance: none;*/
+    /*-o-appearance: none;*/
+    /*-ms-appearance: none;*/
+    /*-moz-appearance: none;*/
+	appearance: none;
+
+	padding: 10px 25px 10px 10px;
+	background-image: url('../img/down.jpg');
+	background-size: 15px;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-position-x:95% ;
+}
+
+h1{
+	text-align: center;
+}
+
+p.text{
+	text-align: center;
+	color: red;
+}
+
+@media(max-width:600px){
+	h1{
+		font-size: 25px;
+		color: blue;
+	}
+
+	p.text{
+		color: green;
+	}
+}

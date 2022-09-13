@@ -1,0 +1,79 @@
+.pp{
+   /*font-family: "Time New Roman";*/
+   /* font-family: sans-serif;*/
+  /*font-family: 'Kdam Thmor Pro', sans-serif;*/
+  font-family: 'Roboto Mono', monospace;
+}
+
+.ppp{
+	/*font-family: 'Roboto', sans-serif;*/
+	/*font-weight: bold;*/
+
+	/*100 to 900*/
+	/*font-weight: 900;*/
+
+	/*font-style: italic;*/
+	/*text-transform: uppercase;*/
+	/*text-transform: lowercase;*/
+    /*text-transform: capitalize;*/
+
+    /*font-variant: small-caps;*/
+
+   /* text-indent: 10px;*/
+
+
+}
+
+.cm{
+	text-decoration: none;
+	color: #000;
+}
+
+.cm:visited{
+	color: blue;
+}
+
+.cm:hover{
+	color: green;
+	font-size: 30px;
+}
+
+.menutext{
+	font-family: sans-serif;
+	text-decoration: none;
+	background: green;
+	color: #fff;
+
+	/*padding: 20px 20px 20px 20px;*/
+	/*padding: 20px;*/
+	padding: 20px 60px;
+
+	/*padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;*/
+
+	transition: all 1s;
+}
+
+.menutext:hover{
+	background: orange;
+	color: #000;
+}
+
+.imgdesign{
+	width: 80px;
+	height: 80px;
+
+	transition: all 2s;
+}
+
+.imgdesign:hover{
+	width: 100px;
+	height: 100px;
+}
+
+
+
+
+/*Arial,Century,Time New Roman,Sans Serif*/

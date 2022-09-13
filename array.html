@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Array</title>	
+</head>
+<body>
+	
+
+	<script type="text/javascript">
+	
+	const person = {
+		name : "Katahi",
+		age :  22,
+		married : false
+	};	
+
+	console.log(person.married);
+
+	let girls = new Array("su su","maw maw","hla hla","mya mya");
+	// console.log(typeof girls);
+
+	// console.log(girls[1]);
+	// console.log(girls[2]);
+
+	// let boys = ["mg mg","kyaw kyaw","maung maung","zaw zaw"];
+	// console.log(boys[3]);
+
+	let a = [1000,2000,3000,4000,5000,6000];
+	console.log(a[5]);
+
+	let friend = "Aung Ko Ko";
+	console.log(friend.length);
+	console.log(friend[8]);
+
+	let z = [];
+	z[0] = "orange";
+	z[5] = "apple";
+	z[3] = "pineapple";
+	z[2] = "blueberry";
+   console.log(z[5]);
+
+
+  // let c = ["red","blue","yellow","green","violet"];
+  // console.log(c[2]);
+  // console.log(c.indexOf("violet"));
+
+
+   let ako = [1,2,3,0];   // true
+  // console.log(Array.isArray(ako));
+
+  // let abc = "abc"; // false
+  // console.log(Array.isArray(abc));
+
+
+    // console.log(ako.toString());
+   //  console.log(typeof ako);
+
+   // console.log(ako);
+  // console.log(ako.toString());
+  // console.log(ako.join("*"));
+
+
+  const abc = ["pink","black","white","blue"];
+  console.log(abc);
+  // console.log(abc[2]);
+
+  abc[4] = "green";
+  abc[1] = "violet";
+  abc[3] =  "black";
+  console.log(abc);
+
+  abc.push("orange");
+  abc.push("red");
+  console.log(abc);
+
+  abc.unshift("tomato");
+  abc.unshift("grey");
+  console.log(abc);
+   
+    abc.shift();
+    abc.shift();
+  console.log(abc);	
+
+  abc.pop();
+  abc.pop();
+  console.log(abc);
+
+  // delete abc[3];
+  // console.log(abc);
+
+  let q = abc.splice(3,1);
+  console.log(q);
+
+  const a1 = ["ko ko","zaw zaw","aung aung","maung maung","bo bo","daung daung"];
+  const a2 = ["hla hla","mya mya","kyal kyal","lu lu"];
+  const a3 = [10,20,30,40];
+
+   console.log(a1+a2);
+
+  console.log(a1.concat(a2));
+  console.log(a2.concat(a3));
+
+  const a4 = a1.concat(a3);
+  console.log(a4);
+  console.log(a4[2]);
+
+  console.log(a4.sort());
+
+  console.log(a4.reverse());
+
+  const aaa = [100,900,400,600,20];
+  console.log(aaa.sort());
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+  
+   
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>
